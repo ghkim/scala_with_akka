@@ -12,4 +12,5 @@ object FibonacciActorApp extends App{
   val future = (actor ? 10).mapTo[Int]
   val fibonacciNum = Await.result(future, 10 seconds)
   print(fibonacciNum)
+  
 }
